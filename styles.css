@@ -1,0 +1,415 @@
+
+@font-face {
+    font-family: "Barlow";
+    font-weight: 400;
+    font-style: normal;
+    src: url("./barlow/Barlow-Regular.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Barlow";
+    font-weight: 700;
+    font-style: normal;
+    src: url("./barlow/Barlow-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-style: normal;
+    src: url("./barlow/Barlow-SemiBold.ttf") format("truetype");
+  }
+
+body {
+    font-family: "Barlow";
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    width: 1638px; 
+    height: 1160px;
+    background-color: #EFF6FF;
+    padding: 70px 60px;
+    box-sizing:border-box;
+    margin: 0 auto;
+}
+
+.grid-container-first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1000px;
+}
+
+.section-left {
+    background-repeat: no-repeat;
+    background-image: 
+        url("./img/logo.svg"),
+        url("./img/bg.jpg");
+    background-size:
+        100px 200px,
+        auto auto;
+  background-position:
+        40px -40px,
+        0 0;
+    padding: 0;
+}
+
+.section-right {
+    padding: 50px 70px;
+    background-color: white;
+}
+
+.grid-container-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    column-gap: 0px;
+}
+
+.grid-container-content .title {
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-left: 20px;
+    padding-top: 50px;
+    margin: 0;
+    font-size: 30px;
+    color: #2A4A5C;
+}
+
+.grid-container-content .obligation {
+    font-weight: 400;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 20px;
+    margin-top: 0;
+    color: #7B8A92;
+    font-size: 22px;
+}
+
+
+.fb {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 20px;
+    padding: 10px 0px;
+    background-color: #255A9B;
+    position: relative;
+}
+
+.fb::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-image: url("./img/facebook.svg");
+    right: 225px;
+}
+
+.in {
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin: 20px;
+    background-color: #0076B6;
+}
+
+.in::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    background-image: url("./img/linkedin.svg");
+    background-size: 20px 20px;
+    left: 15px;
+    z-index: 5;
+}
+
+.social {
+    font-size: 16px;
+    border: none;
+    color: #EEEEEE;
+    height: 50px;
+}
+
+.grid-container-content .or {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 55px;
+    padding-top: 30px;
+}
+
+.or::before {
+    content: "";
+    width: 120px;
+    position: absolute;
+    border-top: 1px solid #AFAFAF;
+    opacity: 0.4;
+    left: 168px;
+    top: 50px;
+}
+
+.or::after {
+    content: "";
+    width: 120px;
+    position: absolute;
+    border-top: 1px solid #AFAFAF;
+    opacity: 0.4;
+    right: 168px;
+    top: 50px;
+}
+
+.grid-email {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 20px;
+    position: relative;
+}
+.grid-phone {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin: 20px;
+    position: relative;
+}
+
+
+.text-input {
+    border: 1px solid #EEEEEE;
+    height: 60px;
+    font-size: 17px;
+    padding: 0px 10px;
+    width: 270px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    
+}
+
+.text-input:focus {
+    outline: none;
+    border-left: 2px solid #0076B6;
+}
+
+.holderplace-email {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    color:#7B8A92;
+    font-size: 14px;
+}
+
+.holderplace-phone {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    color:#7B8A92;
+    font-size: 14px;
+}
+
+
+
+
+
+.Your-type {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: 20px;
+
+}
+
+.Your-type .title-type {
+    font-weight: 600;
+    color: #2A4A5C;
+    font-size: 24px;
+}
+
+.Your-type p {
+    color: #7B8A92;
+}
+
+.radio-types {
+    margin-left: 20px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 140px;
+    
+}
+
+.radio-types .radio-flex {
+    display: flex;
+    column-gap: 80px;
+}
+
+
+.ckeckboxer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: 20px;
+}
+
+.submiter {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 20px;
+    padding: 10px;
+    background-color: #3698FB;
+    color: white;
+    border: none;
+    height: 50px;
+    border-radius: 4px;
+}
+
+
+
+.radio-type {
+    margin-left: 25px;
+}
+
+.radio-label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+
+}
+.radio-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}
+
+.radio-style {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    box-shadow: 
+    0 0 0 2px #EEEEEE;
+    border-radius: 50%;
+    margin-left: -25px;
+    margin-top: 3px;
+}
+
+.radio-input:checked + .radio-style {
+    width: 18px;
+    height: 18px;
+    box-shadow: 
+    inset 0 0 0 4px #3698FB;
+    margin-top: 3px;
+
+}
+
+.one:hover::before {
+    content: "I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.";
+ position: absolute;
+ top: 45px;
+    left: -20px;
+ display: inline-block;
+ background-color: white;
+ box-shadow: 0 0 15px -8px #AFAFAF;
+ width: 250px;
+ padding: 15px;
+ color: #7B8A92;
+ font-size: 14px;
+} 
+
+.two:hover::before {
+    content: "I am a second person bla bla bla";
+ position: absolute;
+ top: 45px;
+    left: -200px;
+ display: inline-block;
+ background-color: white;
+ box-shadow: 0 0 15px -8px #AFAFAF;
+ width: 250px;
+ padding: 15px;
+ color: #7B8A92;
+ font-size: 14px;
+} 
+
+.three:hover::before {
+    content: "I am a person bla bla bla bla bla bla bla bla bla";
+ position: absolute;
+ top: 45px;
+    left: -360px;
+ display: inline-block;
+ background-color: white;
+ box-shadow: 0 0 15px -8px #AFAFAF;
+ width: 250px;
+ padding: 15px;
+ color: #7B8A92;
+ font-size: 14px;
+} 
+
+.four:hover::before {
+    content: "I am a natural person investing bls bls bls ls bvlsfdefdefdfd.";
+ position: absolute;
+ top: 45px;
+    left: -490px;
+ display: inline-block;
+ background-color: white;
+ box-shadow: 0 0 15px -8px #AFAFAF;
+ width: 250px;
+ padding: 15px;
+ color: #7B8A92;
+ font-size: 14px;
+} 
+
+
+.three::after, .one::after, .two::after, .four::after {
+    content: "";
+    position: absolute;
+    background-image: url("./img/9432.png");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    opacity: 0.6;
+
+}
+
+.one::after {
+   top: 4px;
+   left: 73px;
+}
+
+.two::after {
+    top: 4px;
+    left: 70px;
+}
+.three::after {
+    top: 4px;
+    left: 30px;
+}
+.four::after {
+    top: 4px;
+    left: 38px;
+}
+
+
+
+
+/*  
+.inform {
+    position: absolute;
+    display: inline-block;
+    top: 750px;
+    left: 1285px;
+    background-color: white;
+    box-shadow: 0 0 15px -8px #AFAFAF;
+    width: 250px;
+    padding: 15px;
+    color: #AFAFAF;
+    font-size: 14px;
+   }
+   */
+   
+
+
+
+  
